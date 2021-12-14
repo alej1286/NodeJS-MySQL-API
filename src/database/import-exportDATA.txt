@@ -1,0 +1,12 @@
+Git firts steps
+git config --global user.name "alej1286"
+git config --global user.email alej1286@gmail.com
+
+
+Export Data from mysql DB
+mysqldump -u root -p ng_games > data-dump.sql
+
+Importing
+mysql -u root -p
+CREATE DATABASE ng_games;
+mysql -u root -p ng_games < data-dump.sql
